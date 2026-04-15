@@ -1,8 +1,11 @@
 # Propuesta de Proyecto: Laboratorio Virtual Auditivo
 
 ## 1. Resumen Ejecutivo
+
 **Nombre:** Laboratorio Virtual Auditivo.
+
 **Propósito:** Plataforma web que integra el modelo de simulación biológica de *Verhulst et al.* con inteligencia artificial (LLMs) y análisis de datos en un entorno unificado.
+
 **Objetivo Principal:** Permitir a fonoaudiólogos e investigadores científicos cargar audiogramas, ejecutar de forma remota simulaciones biológicas complejas y poder visualizar los resultados a la par que se consulta literatura científica relevante, impulsada por un asistente de investigación de Inteligencia Artificial.
 
 ## 2. Arquitectura Orientada a Servicios (SOA)
@@ -44,6 +47,7 @@ El desarrollo de la plataforma se plantea en dos grandes etapas secuenciales, pr
 
 ### Fase 1: Motor Científico y Gestión de Usuarios
 **Objetivo:** Establecer la infraestructura base. Lograr que un investigador pueda registrarse, subir audiogramas, ejecutar la simulación y visualizar los resultados numéricos y gráficos.
+
 **Tecnologías Clave:** 
 * React, FilePond, TailwindCSS (Frontend). 
 * FastAPI, Supabase Auth/PostgreSQL/Storage (Backend API).
@@ -53,6 +57,7 @@ El desarrollo de la plataforma se plantea en dos grandes etapas secuenciales, pr
 
 ### Fase 2: Asistente de Investigación y Análisis Bibliográfico
 **Objetivo:** Transformar el laboratorio básico en un entorno de estudio. Integrar la capacidad de consultar bibliografía científica y utilizar IA local/Open-Source para extraer contexto avanzado al cruzar las simulaciones con los documentos.
+
 **Tecnologías Clave:**
 * PDF.js y Zotero API (manejo de literatura).
 * LangChain (Orquestador RAG) y ChromaDB (Base vectorial).
